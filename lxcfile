@@ -1,0 +1,3 @@
+name=sport-store
+template=focal
+mount=.:/var/www/sport-store
