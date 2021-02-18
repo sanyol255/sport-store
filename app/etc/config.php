@@ -336,6 +336,7 @@ return [
         'Smile_Patch' => 1,
         'Smile_Reconfigure' => 1,
         'Smile_Varnish' => 1,
+        'SportStore_AboutPage' => 1,
         'Temando_ShippingRemover' => 1,
         'Vertex_Tax' => 1,
         'Vertex_AddressValidationApi' => 1,

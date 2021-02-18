@@ -1,0 +1,9 @@
+<?php
+use SportStore\AboutPage\Block\AboutPage;
+/* @var AboutPage $block */
+?>
+
+<p><b>Who are we?</b> We are <em><?= $block->getCompanyName(); ?></em></p>
+<p><b>What are we selling?</b> We are selling <em><?= $block->getCompanyType(); ?></em></p>
+<p><b>What is our mission?</b> <?= $block->getCompanyDescription(); ?></p>
+<p><b>Where do we deliver our goods? </b> <?= $block->getCompanyGeography(); ?></p>

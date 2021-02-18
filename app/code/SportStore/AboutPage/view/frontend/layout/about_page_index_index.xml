@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>About Us</title>
+        <link rel="stylesheet" src="SportStore_AboutPage::css/styles.css" type="text/css" />
+    </head>
+    <body>
+        <referenceBlock name="catalog.compare.sidebar" remove="true"/>
+        <referenceBlock name="wishlist_sidebar" remove="true" />
+        <referenceContainer name="content">
+            <block class="SportStore\AboutPage\Block\AboutPage" name="about_page"
+            template="SportStore_AboutPage::about_page.phtml">
+                <arguments>
+                    <argument name="company_name" xsi:type="string">Sport Store Corporation</argument>
+                    <argument name="company_type" xsi:type="string">Sport Equipment</argument>
+                    <argument name="company_description" xsi:type="string">Deliver the best clothes, sports inventory and electronics
+                    for everyone who like sport and want to become healthy, strong and successful!</argument>
+                    <argument name="company_geography" xsi:type="string">We shipping goods to USA, Canada and Mexico right now,
+                    but we are growing and soon we will expand our delivering list.</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+    </body>
+</page>
