@@ -3,6 +3,8 @@
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
         <title>Currency Converter</title>
+        <link rel="stylesheet" src="SportStore_CurrencyConverter::css/form.css" type="text/css" />
+        <link src="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500&amp;display=swap" rel="stylesheet" />
     </head>
     <body>
         <referenceBlock name="catalog.compare.sidebar" remove="true"/>

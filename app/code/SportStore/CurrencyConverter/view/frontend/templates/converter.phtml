@@ -5,8 +5,8 @@ use Magento\Framework\Escaper;
 /* @var Escaper $escaper */
 ?>
 <section class="converter">
-    <h2>Currency Converter</h2>
-    <form action="#">
+    <h2 class="converter-title">Currency Converter</h2>
+    <form action="#" class="currency-converter">
         <label for="original-currency"><?= $escaper->escapeHtml(__('Original currency: ')); ?></label>
         <select name="original-currency" id="original-currency">
             <option value="dollar"><?= $escaper->escapeHtml(__('Dollar')); ?></option>

@@ -1,0 +1,22 @@
+.onverter{
+    font-family: 'Shippori Mincho B1', serif;
+    font-size: 1.5em;
+}
+.currency-converter{
+    border: groove #a52a2a 2px;
+    padding: 2em;
+    border-radius: 1em;
+    background-color: #c9aeae;
+}
+.converter-title{
+    color: #580909;
+    font-weight: bold;
+    text-shadow: .1em 0.1em .15em #c61616;
+    text-align: center;
+}
+input[type="submit"]{
+    margin-top: 1em;
+    background-color: #0a6767;
+    color: white;
+    border-radius: 2em;
+}
