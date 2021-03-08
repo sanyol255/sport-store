@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Services</title>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="SportStore\ServicesMenu\Block\Services" name="services"
+            template="SportStore_ServicesMenu::services.phtml" />
+        </referenceContainer>
+    </body>
+</page>
