@@ -1,0 +1,29 @@
+<?php
+use SportStore\CurrencyConverter\Block\Converter;
+use Magento\Framework\Escaper;
+/* @var Converter $block */
+/* @var Escaper $escaper */
+?>
+<section class="converter">
+    <h2 class="converter-title">Currency Converter</h2>
+    <form action="#" class="currency-converter">
+        <label for="original-currency"><?= $escaper->escapeHtml(__('Original currency: ')); ?></label>
+        <select name="original-currency" id="original-currency">
+            <option value="dollar"><?= $escaper->escapeHtml(__('Dollar')); ?></option>
+            <option value="euro"><?= $escaper->escapeHtml(__('Euro')); ?></option>
+            <option value="pound"><?= $escaper->escapeHtml(__('Pound')); ?></option>
+        </select>
+
+        <label for="amount"><?= $escaper->escapeHtml(__(' Amount: ')); ?></label>
+        <input type="number" name="amount" id="amount">
+
+        <label for="target-currency"><?= $escaper->escapeHtml(__('Target currency: ')); ?></label>
+        <select name="target-currency" id="target-currency">
+            <option value="dollar"><?= $escaper->escapeHtml(__('Dollar')); ?></option>
+            <option value="euro"><?= $escaper->escapeHtml(__('Euro')); ?></option>
+            <option value="pound"><?= $escaper->escapeHtml(__('Pound')); ?></option>
+        </select>
+
+        <input type="submit" value="Calculate">
+    </form>
+</section>

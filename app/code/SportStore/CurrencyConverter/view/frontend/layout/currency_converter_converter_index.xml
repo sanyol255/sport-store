@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Currency Converter</title>
+        <link rel="stylesheet" src="SportStore_CurrencyConverter::css/form.css" type="text/css" />
+        <link src="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500&amp;display=swap" rel="stylesheet" type="text/css" />
+        <link src="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&amp;display=swap" rel="stylesheet" type="text/css" src_type="url" />
+    </head>
+    <body>
+        <referenceBlock name="catalog.compare.sidebar" remove="true"/>
+        <referenceBlock name="wishlist_sidebar" remove="true" />
+        <referenceContainer name="columns">
+            <referenceContainer name="div.sidebar.main">
+                <block class="SportStore\CurrencyConverter\Block\ExchangeRate" name="exchange_rate"
+                template="SportStore_CurrencyConverter::exchange_rate.phtml" />
+            </referenceContainer>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="SportStore\CurrencyConverter\Block\Converter" name="converter"
+            template="SportStore_CurrencyConverter::converter.phtml" />
+        </referenceContainer>
+    </body>
+</page>
