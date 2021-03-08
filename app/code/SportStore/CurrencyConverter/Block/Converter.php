@@ -1,6 +1,6 @@
 <?php
 /**
- * Block class for copyright page
+ * Block class for currency converter
  *
  * @author    Oleksandr Kovalchuk <oleksandr.kovalchuk@smile-ukraine.com>
  * @copyright 2021 Smile
@@ -13,9 +13,9 @@ use Magento\Framework\View\Element\Template;
 use Magento\Framework\View\Element\Template\Context;
 
 /**
- * Class ConverterBlock
+ * Class Converter
  */
-class ConverterBlock extends Template
+class Converter extends Template
 {
     public function __construct(Context $context, array $data = [])
     {

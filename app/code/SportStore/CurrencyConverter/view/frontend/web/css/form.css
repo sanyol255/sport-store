@@ -1,4 +1,4 @@
-.onverter{
+.converter{
     font-family: 'Shippori Mincho B1', serif;
     font-size: 1.5em;
 }
@@ -7,11 +7,14 @@
     padding: 2em;
     border-radius: 1em;
     background-color: #c9aeae;
+    box-shadow: .5em .5em .3em #c9aeae;
 }
 .converter-title{
+    font-size: 2em;
+    font-family: 'PT Serif', serif;
     color: #580909;
     font-weight: bold;
-    text-shadow: .1em 0.1em .15em #c61616;
+    text-shadow: .1em .1em .15em #c61616;
     text-align: center;
 }
 input[type="submit"]{
@@ -19,4 +22,13 @@ input[type="submit"]{
     background-color: #0a6767;
     color: white;
     border-radius: 2em;
+}
+.exchange-rate{
+    font-family: 'Shippori Mincho B1', serif;
+    padding: 1em;
+    border-radius: .5em;
+    font-size: 1.5em;
+    border: groove #007399 2px;
+    background-color: #00ace6;
+    color: #fff2e6;
 }
