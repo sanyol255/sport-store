@@ -7,7 +7,7 @@
  */
 declare(strict_types=1);
 
-namespace SportStore\CurrencyConverter\Plugin;
+namespace SportStore\ServicesMenu\Plugin;
 
 use Magento\Framework\Data\Tree\NodeFactory;
 use Magento\Framework\UrlInterface;

@@ -339,6 +339,7 @@ return [
         'SportStore_AboutPage' => 1,
         'SportStore_CopyrightInfo' => 1,
         'SportStore_CurrencyConverter' => 1,
+        'SportStore_ServicesMenu' => 1,
         'Temando_ShippingRemover' => 1,
         'Vertex_Tax' => 1,
         'Vertex_AddressValidationApi' => 1,
