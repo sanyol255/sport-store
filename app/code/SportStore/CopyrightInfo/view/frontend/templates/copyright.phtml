@@ -1,8 +1,11 @@
 <?php
-use SportStore\CopyrightInfo\Block\CopyrightBlock;
-/* @var CopyrightBlock $block  */
+use SportStore\CopyrightInfo\Rewrite\Copyright;
+use Magento\Framework\Escaper;
+
+/* @var Copyright $block  */
+/* @var Escaper $escaper */
 ?>
 
 <em class="copyright">
-    <span>&copy<?= $block->getCopyright(); ?></span>
+    <span>&copy<?= $escaper->escapeHtml($block->getCopyright()); ?></span>
 </em>

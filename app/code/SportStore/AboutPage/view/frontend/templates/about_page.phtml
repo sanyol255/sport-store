@@ -1,9 +1,16 @@
 <?php
 use SportStore\AboutPage\Block\AboutPage;
+use Magento\Framework\Escaper;
+
 /* @var AboutPage $block */
+/* @var Escaper $escaper */
 ?>
 
-<p><b>Who are we?</b> We are <em><?= $block->getCompanyName(); ?></em></p>
-<p><b>What are we selling?</b> We are selling <em><?= $block->getCompanyType(); ?></em></p>
-<p><b>What is our mission?</b> <?= $block->getCompanyDescription(); ?></p>
-<p><b>Where do we deliver our goods? </b> <?= $block->getCompanyGeography(); ?></p>
+<p><?= $escaper->escapeHtml('<b>' . __('Who are we?') . '</b>' . __(' We are ') .
+        '<em>' . __($block->getCompanyName())); ?></em></p>
+<p><?= $escaper->escapeHtml('<b>' . __('What are we selling?') . '</b>' .  __(' We are selling ') .
+        '<em>' . __($block->getCompanyType())); ?></em></p>
+<p><?= $escaper->escapeHtml('<b>' . __('What is our mission? ') . '</b>' .
+        __($block->getCompanyDescription())); ?></p>
+<p><?= $escaper->escapeHtml('<b>' .  __('Where do we deliver our goods? ') . '</b>' .
+        __($block->getCompanyGeography())); ?></p>

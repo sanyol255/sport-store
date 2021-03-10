@@ -42,18 +42,18 @@ class ServicesMenu
     public function beforeGetHtml(Topmenu $subject)
     {
         $menuNode = $this->nodeFactory->create(
-          [
+            [
               'data' =>$this->getNodeAsArray('Services', 'services-menu'),
-              'idField' => 'id',
+              'idField' => 'menuId',
               'tree' => $subject->getMenu()->getTree()
-          ]
+            ]
         );
 
         $menuNode->addChild(
             $this->nodeFactory->create(
                 [
                     'data' => $this->getNodeAsArray('Currency Converter', 'currency-converter/converter'),
-                    'isField' => 'id',
+                    'isField' => 'menuId',
                     'tree' => $subject->getMenu()->getTree()
                 ]
             )
@@ -62,12 +62,12 @@ class ServicesMenu
         $subject->getMenu()->addChild($menuNode);
     }
 
-    protected function getNodeAsArray($name, $id) : array
+    protected function getNodeAsArray($name, $menuId) : array
     {
-        $url = $this->urlBuilder->getUrl($id);
+        $url = $this->urlBuilder->getUrl($menuId);
         return [
             'name' => __($name),
-            'id' => $id,
+            'menuId' => $menuId,
             'url' => $url,
             'has_active' => false,
             'is_active' => false

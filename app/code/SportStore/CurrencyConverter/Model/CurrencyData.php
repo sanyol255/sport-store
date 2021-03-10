@@ -1,10 +1,10 @@
 <?php
 /**
-* Model with currency data for converter
-*
-* @author      Oleksandr Kovalchuk <oleksandr.kovalchuk@smile-ukraine.com>
-* @copyright   2021 Smile
-*/
+ * Model with currency data for converter
+ *
+ * @author      Oleksandr Kovalchuk <oleksandr.kovalchuk@smile-ukraine.com>
+ * @copyright   2021 Smile
+ */
 declare(strict_types=1);
 
 namespace SportStore\CurrencyConverter\Model;

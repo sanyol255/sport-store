@@ -1,12 +1,14 @@
 <?php
 use SportStore\ServicesMenu\Block\Services;
 use Magento\Framework\Escaper;
+
 /* @var Services $block */
 /* @var Escaper $escaper */
 ?>
 
 <nav class="services">
     <ul>
-        <li><a href="<?= $escaper->escapeHtml(__($block->getCurrencyConverterUrl())); ?>">Currency converter</a></li>
+        <li><a href="<?= $escaper->escapeHtmlAttr(__($block->getCurrencyConverterUrl())); ?>">
+                <?= $escaper->escapeHtml(__('Currency converter')); ?></a></li>
     </ul>
 </nav>

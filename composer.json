@@ -100,6 +100,7 @@
         "smile/module-debug-toolbar": "^4.0",
         "smile/php-codesniffer-rules-magento-2": "^3.0",
         "smile/php-md-rules": "^2.0",
+        "smile/qafoo-quality-analyzer": "^2.0",
         "smile/spbuilder-shim": "^5.0",
         "squizlabs/php_codesniffer": "~3.5.4"
     },

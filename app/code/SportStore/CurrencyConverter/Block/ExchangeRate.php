@@ -14,7 +14,7 @@ use Magento\Framework\View\Element\Template\Context;
 use SportStore\CurrencyConverter\Model\CurrencyData;
 
 /**
- * Class ExchangeRate
+ * Class ExchangeRate for getting data with currency information from model
  */
 class ExchangeRate extends Template
 {

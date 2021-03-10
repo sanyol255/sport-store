@@ -25,10 +25,9 @@ class Index implements HttpGetActionInterface
     /**
      * Index constructor for ServicesMenu
      *
-     * @param Context      $context
      * @param PageFactory  $pageFactory
      */
-    public function __construct(Context $context, PageFactory $pageFactory)
+    public function __construct(PageFactory $pageFactory)
     {
         $this->pageFactory = $pageFactory;
     }
