@@ -16,7 +16,7 @@ namespace_weight:
   Smile:      50
 
   # Project
-  #Example:   70
+  SportStore:   70
 
 # List of community namespace to ignore in the tests
 community_namespace_to_ignore_for_dependencies: true

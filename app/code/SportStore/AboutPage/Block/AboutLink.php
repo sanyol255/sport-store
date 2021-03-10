@@ -20,14 +20,17 @@ class AboutLink extends Link
     /* @var string */
     protected string $template = 'SportStore_AboutPage::about_link';
 
+    /** Link to custom about page */
+    const ABOUT_PAGE = '/about-page';
+
     /**
      * Url for About Sport Store page
      *
-     * @return Phrase
+     * @return string
      */
-    public function getHref() : Phrase
+    public function getHref() : string
     {
-        return __('/about-page');
+        return self::ABOUT_PAGE;
     }
 
     /**

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bd991d001a0d048c1f78cb7a14a6443d",
+    "content-hash": "a212203c4217252c35059fac5d0d3dd6",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -2292,6 +2292,7 @@
                 "console",
                 "laminas"
             ],
+            "abandoned": "laminas/laminas-cli",
             "time": "2019-12-31T16:31:45+00:00"
         },
         {
@@ -25297,6 +25298,27 @@
             "description": "PHP MD rules",
             "homepage": "https://git.smile.fr/dirtech/php-md-rules",
             "time": "2020-12-16T10:22:28+00:00"
+        },
+        {
+            "name": "smile/qafoo-quality-analyzer",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "git@git.smile.fr:dirtech/qafoo-quality-analyzer.git",
+                "reference": "4ba08c7a6d44b23de2e9aa0fad6f537755a9ec41"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://packagist.galaxy.intranet/libraries//dist/smile/qafoo-quality-analyzer/smile-qafoo-quality-analyzer-2.0.1-44dcb1.zip",
+                "reference": "4ba08c7a6d44b23de2e9aa0fad6f537755a9ec41",
+                "shasum": "eee2d7e6c636da2c2507d2ff9d4e81c0070f12d8"
+            },
+            "type": "library",
+            "license": [
+                "AGPL-3.0"
+            ],
+            "description": "Helper for code reviews",
+            "time": "2020-07-30T17:28:01+00:00"
         },
         {
             "name": "smile/spbuilder-shim",

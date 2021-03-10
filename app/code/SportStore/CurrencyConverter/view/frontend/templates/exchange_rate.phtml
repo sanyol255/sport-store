@@ -1,14 +1,15 @@
 <?php
 use SportStore\CurrencyConverter\Block\ExchangeRate;
 use Magento\Framework\Escaper;
+
 /* @var ExchangeRate $block */
 /* @var Escaper $escaper */
 $currencyRate = $block->getCurrency();
 ?>
 
 <div class="exchange-rate">
-    <h2>Exchange rate to bitcoin</h2>
-    <p><?= $escaper->escapeHtml(__("Dollar: {$currencyRate->dollarExchangeRate()}"));  ?></p>
-    <p><?= $escaper->escapeHtml(__("Euro: {$currencyRate->euroExchangeRate()}"));  ?></p>
-    <p><?= $escaper->escapeHtml(__("Pound: {$currencyRate->poundExchangeRate()}"));  ?></p>
+    <h2><?= $escaper->escapeHtml(__('Exchange rate to bitcoin')); ?></h2>
+    <p><?= $escaper->escapeHtml(__('Dollar: ' . $currencyRate->dollarExchangeRate()));?></p>
+    <p><?= $escaper->escapeHtml(__('Euro: ' . $currencyRate->euroExchangeRate()));  ?></p>
+    <p><?= $escaper->escapeHtml(__('Pound: ' . $currencyRate->poundExchangeRate()));  ?></p>
 </div>
